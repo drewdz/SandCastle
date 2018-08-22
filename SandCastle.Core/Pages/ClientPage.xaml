@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<d:MvxContentPage 
+    x:TypeArguments="viewModels:ClientViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:viewModels="clr-namespace:SandCastle.Core.ViewModels"
+    x:Class="SandCastle.Core.Pages.ClientPage"
+    Title="Client">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition  Height="*" />
+            </Grid.RowDefinitions>
+            <Button
+                Grid.Row="0"
+                Text="Start"
+                Command="{Binding ScanCommand}"
+                IsEnabled="{Binding CanStart}"
+                />
+
+            <ListView
+                Grid.Row="1"
+                ItemsSource="{Binding Devices}"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <ContentView />
+
+                            <Label 
+                                Grid.Column="0"
+                                Text="{Binding Guid}"/>
+
+                            <Label
+                                Grid.Column="1"
+                                Text="{Binding Name}" />
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</d:MvxContentPage>

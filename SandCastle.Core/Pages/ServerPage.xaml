@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<d:MvxContentPage 
+    x:TypeArguments="viewModels:ServerViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:SandCastle.Core.ViewModels"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    x:Class="SandCastle.Core.Pages.ServerPage"
+    Title="Server">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label 
+                Text="{Binding Prompt}"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button
+                Text="Start"
+                Command="{Binding StartCommand}"
+                IsEnabled="{Binding CanStart}"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</d:MvxContentPage>
