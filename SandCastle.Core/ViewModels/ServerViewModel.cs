@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Commands;
 using MvvmCross.ViewModels;
-using PE.Plugins.Bluetooth;
+//using PE.Plugins.Bluetooth;
 using System;
 using System.Threading.Tasks;
 
@@ -18,7 +18,7 @@ namespace SandCastle.Core.ViewModels
     {
         #region Fields
 
-        private readonly IBleService _BleService;
+        //private readonly IBleService _BleService;
 
         private DateTime _Timestamp;
 
@@ -26,9 +26,9 @@ namespace SandCastle.Core.ViewModels
 
         #region Constructors
 
-        public ServerViewModel(IBleService bleService)
+        public ServerViewModel()
         {
-            _BleService = bleService;
+            //_BleService = bleService;
         }
 
         #endregion Constructors
@@ -38,9 +38,9 @@ namespace SandCastle.Core.ViewModels
         private IMvxCommand _StartCommand = null;
         public IMvxCommand StartCommand => _StartCommand ?? new MvxCommand(() =>
         {
-            _BleService.Server.Start(new BleDevice { GuidValue = 0x1813, Name = "Test" }, new BleCharacteristic[] {
-                new BleCharacteristic { GuidValue = 0x2AC8, Name = "Changed" }
-            });
+            //_BleService.Server.Start(new BleDevice { GuidValue = 0x1813, Name = "Test" }, new BleCharacteristic[] {
+            //    new BleCharacteristic { GuidValue = 0x2AC8, Name = "Changed" }
+            //});
             CanStart = false;
             Prompt = "Server has been started. We're broadcasting!";
         });

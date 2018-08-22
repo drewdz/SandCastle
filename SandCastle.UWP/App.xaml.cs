@@ -10,7 +10,7 @@ namespace SandCastle.UWP
         }
     }
 
-    public abstract class UwpApp : MvxWindowsApplication<Setup, Core.MvxApp, UI.App>
+    public abstract class UwpApp : MvxWindowsApplication<Setup, Core.MvxApp, UI.App, MainPage>
     {
     }
 }

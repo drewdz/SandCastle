@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SandCastle.UI.Resources.MainStyles"
+    xmlns:local="clr-namespace:SandCastle.UI.Resources">
+    <ResourceDictionary.MergedDictionaries>
+        <local:BaseTheme />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Color x:Key="ColorOne">#00FF00</Color>
+    <Color x:Key="ColorTwo">#FF0000</Color>
+
+    <Style x:Key="Title" TargetType="Label">
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+    <Style x:Key="ErrorLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="Micro" />
+        <Setter Property="VerticalTextAlignment" Value="Start" />
+        <Setter Property="FontAttributes" Value="Italic" />
+        <Setter Property="TextColor" Value="Red" />
+    </Style>
+    <Style x:Key="ListItemTitle" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="ListItemSubtitle" TargetType="Label">
+        <Setter Property="FontSize" Value="Small" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+</ResourceDictionary>

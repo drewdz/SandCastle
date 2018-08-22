@@ -98,6 +98,7 @@
     </Compile>
     <Compile Include="Bootstrap\BluetoothBootstrap.cs" />
     <Compile Include="Bootstrap\DialogsBootstrap.cs" />
+    <Compile Include="Bootstrap\ValidationBootstrap.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -153,14 +154,6 @@
       <Project>{cbfd152a-6f26-4ede-aa33-af924a3782ec}</Project>
       <Name>PE.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth.WindowsCommon\PE.Plugins.Bluetooth.WindowsCommon.csproj">
-      <Project>{8f59e5a8-89f0-4162-8837-43271b129a93}</Project>
-      <Name>PE.Plugins.Bluetooth.WindowsCommon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth\PE.Plugins.Bluetooth.csproj">
-      <Project>{40eea9bf-21ea-40f8-8881-c35884d9487a}</Project>
-      <Name>PE.Plugins.Bluetooth</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs.WindowsCommon\PE.Plugins.Dialogs.WindowsCommon.csproj">
       <Project>{2e86bf09-de2f-4b0b-b63d-1670042a4f7a}</Project>
       <Name>PE.Plugins.Dialogs.WindowsCommon</Name>
@@ -176,6 +169,10 @@
     <ProjectReference Include="..\Plugins\LocalStorage\PE.Plugins.LocalStorage\PE.Plugins.LocalStorage.csproj">
       <Project>{af9d5680-dd7e-435b-bc6a-17579a1db110}</Project>
       <Name>PE.Plugins.LocalStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins\Validation\PE.Plugins.Validation\PE.Plugins.Validation.csproj">
+      <Project>{4376b07b-041f-4f55-847b-a4c0ded518d0}</Project>
+      <Name>PE.Plugins.Validation</Name>
     </ProjectReference>
     <ProjectReference Include="..\SandCastle.Core\SandCastle.Core.csproj">
       <Project>{023851c1-3f75-465e-b221-ef2f4144ab66}</Project>

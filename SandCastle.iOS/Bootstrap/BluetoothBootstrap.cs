@@ -2,7 +2,7 @@
 
 namespace SandCastle.iOS.Bootstrap
 {
-    public class BluetoothBootstrap : MvxPluginBootstrapAction<PE.Plugins.Bluetooth.iOS.Plugin>
-    {
-    }
+    //public class BluetoothBootstrap : MvxPluginBootstrapAction<PE.Plugins.Bluetooth.iOS.Plugin>
+    //{
+    //}
 }

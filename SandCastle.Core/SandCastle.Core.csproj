@@ -73,8 +73,8 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Framework\PE.Framework\PE.Framework.csproj" />
-      <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth\PE.Plugins.Bluetooth.csproj" />
       <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs\PE.Plugins.Dialogs.csproj" />
       <ProjectReference Include="..\Plugins\LocalStorage\PE.Plugins.LocalStorage\PE.Plugins.LocalStorage.csproj" />
+      <ProjectReference Include="..\Plugins\Validation\PE.Plugins.Validation\PE.Plugins.Validation.csproj" />
     </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Commands;
 using MvvmCross.ViewModels;
-using PE.Plugins.Bluetooth;
+//using PE.Plugins.Bluetooth;
 using System;
 using System.Collections.Generic;
 
@@ -18,42 +18,36 @@ namespace SandCastle.Core.ViewModels
     {
         #region Fields
 
-        private readonly IBleService _BleService;
+        //private readonly IBleService _BleService;
 
         #endregion Fields
 
         #region Constructors
 
-        public ClientViewModel(IBleService bleService)
+        public ClientViewModel()
         {
-            _BleService = bleService;
+            //_BleService = bleService;
 
             //  listen for changes
-            _BleService.Client.DeviceFound += (sender, e) =>
-            {
-            };
-            _BleService.Client.CharacteristicFound += (sender, e) =>
-            {
-            };
         }
 
         #endregion Constructors
 
         #region Properties
 
-        private List<BleDevice> _Devices = new List<BleDevice>();
-        public List<BleDevice> Devices
-        {
-            get => _Devices;
-            set => SetProperty(ref _Devices, value);
-        }
+        //private List<BleDevice> _Devices = new List<BleDevice>();
+        //public List<BleDevice> Devices
+        //{
+        //    get => _Devices;
+        //    set => SetProperty(ref _Devices, value);
+        //}
 
-        private BleDevice _Device = null;
-        public BleDevice Device
-        {
-            get => _Device;
-            set => SetProperty(ref _Device, value);
-        }
+        //private BleDevice _Device = null;
+        //public BleDevice Device
+        //{
+        //    get => _Device;
+        //    set => SetProperty(ref _Device, value);
+        //}
 
         #endregion Properties
 
@@ -65,7 +59,7 @@ namespace SandCastle.Core.ViewModels
         private IMvxCommand _StopCommand = null;
         public IMvxCommand StopCommand => _StopCommand ?? new MvxCommand(() =>
         {
-            _BleService.Client.StopScan();
+            //_BleService.Client.StopScan();
         });
 
         private IMvxCommand _AddCommand = null;
@@ -81,8 +75,8 @@ namespace SandCastle.Core.ViewModels
         {
             try
             {
-                _BleService.Client.StartScan(new BleDevice { Guid = "71DA3FD1-7E10-41C1-B16F-4430B5060001" });
-                }
+                //_BleService.Client.StartScan(new BleDevice { Guid = "71DA3FD1-7E10-41C1-B16F-4430B5060001" });
+            }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(string.Format("*** ClientViewModel.Start - Exception: {0}", ex));

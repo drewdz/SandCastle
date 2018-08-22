@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Bootstrap\BluetoothBootstrap.cs" />
     <Compile Include="Bootstrap\DialogsBootstrap.cs" />
+    <Compile Include="Bootstrap\ValidationBootstrap.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -154,16 +155,6 @@
       <Project>{cbfd152a-6f26-4ede-aa33-af924a3782ec}</Project>
       <Name>PE.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth.iOS\PE.Plugins.Bluetooth.iOS.csproj">
-      <Project>{e71f3053-056c-4381-9638-048ed73bdff6}</Project>
-      <Name>PE.Plugins.Bluetooth.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
-    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth\PE.Plugins.Bluetooth.csproj">
-      <Project>{40eea9bf-21ea-40f8-8881-c35884d9487a}</Project>
-      <Name>PE.Plugins.Bluetooth</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs.iOS\PE.Plugins.Dialogs.iOS.csproj">
       <Project>{8a73352a-558a-4b45-8cd3-bac0a4d8524e}</Project>
       <Name>PE.Plugins.Dialogs.iOS</Name>
@@ -173,6 +164,10 @@
     <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs\PE.Plugins.Dialogs.csproj">
       <Project>{9d87d565-5aa0-4687-b6b3-db1840ab7f1d}</Project>
       <Name>PE.Plugins.Dialogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins\Validation\PE.Plugins.Validation\PE.Plugins.Validation.csproj">
+      <Project>{4376b07b-041f-4f55-847b-a4c0ded518d0}</Project>
+      <Name>PE.Plugins.Validation</Name>
     </ProjectReference>
     <ProjectReference Include="..\SandCastle.Core\SandCastle.Core.csproj">
       <Project>{023851c1-3f75-465e-b221-ef2f4144ab66}</Project>

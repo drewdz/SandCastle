@@ -10,16 +10,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="ValueConverters\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Framework\PE.Framework\PE.Framework.csproj" />
-    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth\PE.Plugins.Bluetooth.csproj" />
     <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs\PE.Plugins.Dialogs.csproj" />
     <ProjectReference Include="..\Plugins\LocalStorage\PE.Plugins.LocalStorage\PE.Plugins.LocalStorage.csproj" />
+    <ProjectReference Include="..\Plugins\Validation\PE.Plugins.Validation\PE.Plugins.Validation.csproj" />
     <ProjectReference Include="..\SandCastle.Core\SandCastle.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="GlobalStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\BaseTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\MainStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DialogsDemoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ValidationDemoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

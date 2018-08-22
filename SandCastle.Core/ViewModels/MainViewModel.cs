@@ -1,6 +1,9 @@
-﻿using MvvmCross.Commands;
-using MvvmCross.Navigation;
+﻿using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+
+using SandCastle.Core.Models;
+
+using System.Collections.Generic;
 
 namespace SandCastle.Core.ViewModels
 {
@@ -23,16 +26,53 @@ namespace SandCastle.Core.ViewModels
 
         #region Properties
 
+        private List<MenuItem> _MenuItems = null;
+        public List<MenuItem> MenuItems
+        {
+            get => _MenuItems;
+            set => SetProperty(ref _MenuItems, value);
+        }
+
+        private MenuItem _MenuItem;
+        public MenuItem MenuItem
+        {
+            get => _MenuItem;
+            set
+            {
+                SetProperty(ref _MenuItem, value);
+                if (value != null) value.Action?.Invoke();
+                //  TODO: clear the selected item so that we can click it again
+            }
+        }
+
         #endregion Properties
 
-        #region Commands
+        #region Lifecycle
 
-        private IMvxCommand _ClientCommand;
-        public IMvxCommand ClientCommand => _ClientCommand ?? new MvxAsyncCommand(async () => await _NavigationService.Navigate<ClientViewModel>());
+        public override void ViewAppeared()
+        {
+            MvxNotifyTask.Create(async () =>
+            {
+                //  create a list of menu items
+                var menu = new List<MenuItem>
+                {
+                    new MenuItem
+                    {
+                        Title = "Dialogs",
+                        Description = "Demonstrate the use of the dialogs plugins.",
+                        Action = async () => await _NavigationService.Navigate<DialogsDemoViewModel>()
+                    },
+                    new MenuItem
+                    {
+                        Title = "Validation",
+                        Description = "See how the validation plugin works.",
+                        Action = async () => await _NavigationService.Navigate<ValidationDemoViewModel>()
+                    }
+                };
+                MenuItems = menu;
+            });
+        }
 
-        private IMvxCommand _ServerCommand;
-        public IMvxCommand ServerCommand => _ServerCommand ?? new MvxAsyncCommand(async () => await _NavigationService.Navigate<ServerViewModel>());
-
-        #endregion Commands
+        #endregion Lifecycle
     }
 }

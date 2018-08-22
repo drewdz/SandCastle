@@ -10,8 +10,8 @@
         {
         }
 
-        public void Include(PE.Plugins.Bluetooth.WindowsCommon.BleService service)
-        {
-        }
+        //public void Include(PE.Plugins.Bluetooth.WindowsCommon.BleService service)
+        //{
+        //}
     }
 }
