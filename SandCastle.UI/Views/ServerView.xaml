@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewModels="clr-namespace:SandCastle.Core.ViewModels"
     xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
-    x:Class="SandCastle.Core.Pages.ServerPage"
+    x:Class="SandCastle.UI.Views.ServerView"
     Title="Server">
     <ContentPage.Content>
         <StackLayout>

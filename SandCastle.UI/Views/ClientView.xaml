@@ -3,9 +3,9 @@
     x:TypeArguments="viewModels:ClientViewModel"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     xmlns:viewModels="clr-namespace:SandCastle.Core.ViewModels"
-    x:Class="SandCastle.Core.Pages.ClientPage"
+    xmlns:d="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    x:Class="SandCastle.UI.Views.ClientView"
     Title="Client">
     <ContentPage.Content>
         <Grid>

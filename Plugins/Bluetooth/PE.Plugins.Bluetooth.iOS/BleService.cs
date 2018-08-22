@@ -32,9 +32,9 @@ namespace PE.Plugins.Bluetooth.iOS
                 return (manager.State == CBPeripheralManagerState.PoweredOn) ? BleStates.On : BleStates.Off;
             }
             //  request auth
-            manager.respo
+            //manager.respo
 
-            return true;
+            return BleStates.On;
         }
 
         #endregion Operations

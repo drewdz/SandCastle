@@ -181,6 +181,10 @@
       <Project>{023851c1-3f75-465e-b221-ef2f4144ab66}</Project>
       <Name>SandCastle.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SandCastle.UI\SandCastle.UI.csproj">
+      <Project>{a2f41b51-ecb3-44cf-9178-d6172a3b6be9}</Project>
+      <Name>SandCastle.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -154,6 +154,16 @@
       <Project>{cbfd152a-6f26-4ede-aa33-af924a3782ec}</Project>
       <Name>PE.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth.iOS\PE.Plugins.Bluetooth.iOS.csproj">
+      <Project>{e71f3053-056c-4381-9638-048ed73bdff6}</Project>
+      <Name>PE.Plugins.Bluetooth.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins\Bluetooth\PE.Plugins.Bluetooth\PE.Plugins.Bluetooth.csproj">
+      <Project>{40eea9bf-21ea-40f8-8881-c35884d9487a}</Project>
+      <Name>PE.Plugins.Bluetooth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Plugins\Dialogs\PE.Plugins.Dialogs.iOS\PE.Plugins.Dialogs.iOS.csproj">
       <Project>{8a73352a-558a-4b45-8cd3-bac0a4d8524e}</Project>
       <Name>PE.Plugins.Dialogs.iOS</Name>
@@ -167,6 +177,10 @@
     <ProjectReference Include="..\SandCastle.Core\SandCastle.Core.csproj">
       <Project>{023851c1-3f75-465e-b221-ef2f4144ab66}</Project>
       <Name>SandCastle.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SandCastle.UI\SandCastle.UI.csproj">
+      <Project>{a2f41b51-ecb3-44cf-9178-d6172a3b6be9}</Project>
+      <Name>SandCastle.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

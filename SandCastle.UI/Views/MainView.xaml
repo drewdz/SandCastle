@@ -2,8 +2,7 @@
 <mvx:MvxContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="SandCastle.Core.Pages.MainPage"
-    xmlns:res="clr-namespace:SandCastle.Core.Resources;assembly=SandCastle.Core"
+    x:Class="SandCastle.UI.Views.MainView"
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     Title="Main">
     

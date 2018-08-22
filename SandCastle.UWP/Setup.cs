@@ -5,7 +5,7 @@ using System;
 
 namespace SandCastle.UWP
 {
-    public class Setup : MvxFormsWindowsSetup<Core.MvxApp, Core.FormsApp>
+    public class Setup : MvxFormsWindowsSetup<Core.MvxApp, UI.App>
     {
         protected override IMvxPluginConfiguration GetPluginConfiguration(Type plugin)
         {

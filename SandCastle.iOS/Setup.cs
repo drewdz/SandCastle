@@ -5,7 +5,7 @@ using System;
 
 namespace SandCastle.iOS
 {
-    public class Setup : MvxFormsIosSetup<Core.MvxApp, Core.FormsApp>
+    public class Setup : MvxFormsIosSetup<Core.MvxApp, UI.App>
     {
         protected override IMvxPluginConfiguration GetPluginConfiguration(Type plugin)
         {

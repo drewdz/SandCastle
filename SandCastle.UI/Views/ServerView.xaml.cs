@@ -2,11 +2,11 @@
 using MvvmCross.Forms.Views;
 using SandCastle.Core.ViewModels;
 
-namespace SandCastle.Core.Pages
+namespace SandCastle.UI.Views
 {
-    public partial class ServerPage : MvxContentPage<ServerViewModel>
+    public partial class ServerView : MvxContentPage<ServerViewModel>
 	{
-		public ServerPage ()
+		public ServerView()
 		{
 			InitializeComponent ();
 		}

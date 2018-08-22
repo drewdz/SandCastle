@@ -5,7 +5,7 @@ using UIKit;
 namespace SandCastle.iOS
 {
     [Register("AppDelegate")]
-    public class AppDelegate : MvxFormsApplicationDelegate<Setup, Core.MvxApp, Core.FormsApp>
+    public class AppDelegate : MvxFormsApplicationDelegate<Setup, Core.MvxApp, UI.App>
     {
         public override UIWindow Window
         {

@@ -21,7 +21,7 @@ namespace SandCastle.Droid
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]
-    public class SplashScreen : MvxFormsSplashScreenActivity<Setup, Core.MvxApp, Core.FormsApp>
+    public class SplashScreen : MvxFormsSplashScreenActivity<Setup, Core.MvxApp, UI.App>
     {
         public SplashScreen()
             : base(Resource.Layout.SplashScreen)

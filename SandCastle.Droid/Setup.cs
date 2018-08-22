@@ -8,7 +8,7 @@ using MvvmCross.Forms.Platforms.Android.Core;
 
 namespace SandCastle.Droid
 {
-    public class Setup : MvxFormsAndroidSetup<Core.MvxApp, Core.FormsApp>
+    public class Setup : MvxFormsAndroidSetup<Core.MvxApp, UI.App>
     {
         protected override void InitializeFirstChance()
         {

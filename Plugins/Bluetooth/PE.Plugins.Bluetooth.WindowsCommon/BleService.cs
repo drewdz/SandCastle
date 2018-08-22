@@ -17,6 +17,11 @@
             return true;
         }
 
+        BleStates IBleService.Available()
+        {
+            throw new System.NotImplementedException();
+        }
+
         #endregion Operations
     }
 }
